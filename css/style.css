@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #6B4984
+}
+
+.container header{
+    min-height: 100vh;
+    /* background: linear-gradient(132.55deg, #6B4984 26.07%, #281D42 97.29%); */
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    color: #292929;
+    z-index: -1;
+}
+
+.container header h1{
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 48px;
+    width: 450px;
+    top: 10%;
+    left: 2%;
+    transform: (-2%, 10%);
+}
+
+.container header h1,
+.container header img{
+    position: absolute;
+}
+
+.container header h1 strong{
+    text-shadow: 0 0 15px #29292980;
+
+}
+
+.container header img {
+    bottom: 0;
+    width: 100vw;
+    transform: translate(0%);
+}
+
+.moon {
+    
+    width: 150px !important;
+    height: 150px;
+    top: 20px;
+    left: 60%;
+    transform: translate(-60%, -10px);
+}
+
+.sun {
+    position: absolute;
+    width: 250px !important;
+    height: 250px;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -100px);
+}
+
+main{
+    height: 100vh;
+    z-index: 99;
+    background:linear-gradient(180deg, #6B498470 21.88%, #7655C2 43.23%, #FF5733 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+footer{
+    height: 100vh;
+    z-index: 99;
+    background:#FF5733;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: sans-serif;
+    position:relative;
+}
+
+
+.good-morning {
+    position: absolute;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 24px;
+    width: 200px;
+    top: 50% ;
+    left: calc(50% - 100px);
+    transform: (-25%, 50%);
+    text-align: center;
+}
+@media screen and (max-width: 1024px){
+    .container header h1{
+        font-size: 36px;
+        width: 100%;
+        text-align: center;
+        padding: 50px;
+    }
+    .moon{
+        top: 50%;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+    .moon{
+        width: 80px !important;
+        height: 80px;
+    }
+}
